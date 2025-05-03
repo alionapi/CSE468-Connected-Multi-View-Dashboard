@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chocolate‑Sales Dashboard</title>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1 class="title">Chocolate‑Sales Connected Dashboard</h1>
+<button id="reset-btn">Reset All Filters</button>
+
+<div class="chart-panel">
+
+  <svg id="area-chart"></svg>
+  <svg id="context-chart"></svg>
+</div>
+
+<div class="chart-panel">
+  <svg id="bar-chart"></svg>
+</div>
+
+<div class="table-panel">
+
+  <table id="data-table">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+  <!-- Pagination controls -->
+  <div id="pagination"></div>
+</div>
+
+<script src="src/script.js"></script>
+</body>
+</html>
