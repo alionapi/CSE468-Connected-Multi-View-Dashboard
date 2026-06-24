@@ -1,45 +1,144 @@
 # CSE468-Connected-Multi-View-Dashboard
-Information Visualization course assignment
-## Chocolate Sales Dashboard
 
-### Overview
+Interactive Chocolate Sales Visualization
 
-This project implements an interactive, multi-view dashboard for exploring Chocolate Sales Data using D3.js.
+## Overview
 
-### Components
+An interactive multi-view dashboard developed for the Information Visualization course using D3.js. The dashboard enables coordinated exploration of chocolate sales data through linked visualizations and interactive filtering.
 
-#### Interactive Data Table
+## Features
 
-- Allows sorting and filtering on all columns
-- Row selection with visual feedback
-- Pagination for large datasets
-- Selecting a row highlights corresponding data in the charts
+* Interactive data table with sorting and filtering
+* Time series area chart with brushing
+* Stacked bar chart for category analysis
+* Cross-filtering and linked interactions
+* Real-time coordinated updates between views
+* Smooth transitions and responsive layout
+* Reset functionality for clearing selections
 
-#### Time Series Area Chart with Brushing
+## Repository Structure
 
-- Displays monthly sales trends with a focus+context layout
-- Users can brush to select a time range
-- Selected time range filters data in both the table and bar chart
+```text id="l08pdq"
+.
+├── data/          # Dataset files
+├── src/           # JavaScript source code
+├── README.md
+├── image.png      # Dashboard screenshot
+├── image2.png     # Additional screenshot
+├── index.html
+└── styles.css
+```
 
-#### Stacked Bar Chart
+## Dashboard Components
 
-- Visualizes sales by category (reused from the previous assignment)
-- Selecting a category filters and highlights relevant data in the other views
+### Interactive Data Table
 
-#### Interactivity & Coordination
+Provides:
 
-- All components are linked through cross-filtering and state management
-- Interactions in one view update the others in real time
-- Smooth transitions and a responsive layout
-- Reset button to clear all selections
+* Sorting on all columns
+* Filtering capabilities
+* Pagination for large datasets
+* Row selection with visual feedback
 
-#### Code Structure
+Selected rows are synchronized with the charts.
 
-- Modular code with clear separation of concerns
-- Detailed comments explaining key implementation and coordination mechanisms
+### Time Series Area Chart
 
-#### D3.js Concepts Demonstrated
+Displays monthly sales trends using a focus+context layout.
 
-- Brushing and linking
-- Event handling
-- Coordinated dashboard design
+Features:
+
+* Brushing for time-range selection
+* Dynamic filtering of other views
+* Smooth updates during interaction
+
+### Stacked Bar Chart
+
+Visualizes sales grouped by category.
+
+Features:
+
+* Category selection
+* Highlighting and filtering
+* Coordinated interaction with the table and area chart
+
+## Coordinated Views
+
+All components are connected through shared state and cross-filtering.
+
+Interactions in one view automatically update:
+
+* The data table
+* The area chart
+* The stacked bar chart
+
+This enables interactive exploration from multiple perspectives.
+
+## D3.js Concepts
+
+The project demonstrates:
+
+* Brushing and linking
+* Event handling
+* Coordinated multiple views
+* Data-driven updates
+* Animated transitions
+* Responsive visualization design
+
+## Screenshots
+
+### Dashboard Overview
+
+![Dashboard](image.png)
+
+### Interactive Views
+
+![Dashboard Interactions](image2.png)
+
+## Running
+
+Open the dashboard in a web browser:
+
+```bash id="tztk8g"
+index.html
+```
+
+or start a local server:
+
+```bash id="o9f88j"
+python -m http.server
+```
+
+and navigate to:
+
+```text id="d1t4es"
+http://localhost:8000
+```
+
+## Main Files
+
+### src/
+
+Contains the JavaScript implementation of:
+
+* Data loading
+* Chart rendering
+* Event handling
+* State management
+* Cross-view coordination
+
+### data/
+
+Contains the chocolate sales dataset used by the dashboard.
+
+## Technologies
+
+* D3.js
+* HTML
+* CSS
+* JavaScript
+
+## Course Information
+
+**Course:** CSE468 Information Visualization
+
