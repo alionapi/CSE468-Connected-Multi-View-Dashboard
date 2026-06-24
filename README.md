@@ -2,8 +2,6 @@
 
 Interactive Chocolate Sales Visualization
 
-## Overview
-
 An interactive multi-view dashboard developed for the Information Visualization course using D3.js. The dashboard enables coordinated exploration of chocolate sales data through linked visualizations and interactive filtering.
 
 ## Features
